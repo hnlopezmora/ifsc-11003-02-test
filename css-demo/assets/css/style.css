@@ -1,6 +1,6 @@
 /*  CSS Demo Stylesheet */
 
-/*  ---------------Box Sizing-----------------  */
+/*------------------ Box Sizing -------------------*/
 
 html {
   box-sizing: border-box;
@@ -11,6 +11,21 @@ html {
   box-sizing: inherit;
 }
 
+/*---------------- Utility Classes ----------------*/
+
+.container {
+  background-color:pink;
+  width:80vw;
+  max-width:960px;
+  margin:20px auto;
+}
+
+/*--------------- Responsive Images ---------------*/
+
+img {
+  max-width:100%;
+}
+
 /*----------------- Global Styles -----------------*/
 
 html {
@@ -18,7 +33,7 @@ html {
 }
 
 body {
-    font-family: "Saira", sans-serif;
+  font-family: "Saira", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -27,7 +42,7 @@ body {
 }
 
 header.primary {
-    background:red;
+    background:orange;
     text-align:center;
     text-shadow: 10px 10px 10px #000000;
 }
@@ -50,8 +65,149 @@ header.primary h2 {
 
 header.primary nav ul {
   padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:20px 0 10px 0;
 }
 
 header.primary nav ul li{
   list-style-type:none;
+}
+
+
+header.primary nav ul a {
+  color:rgb(113, 113, 44);
+  background-color:#000000;
+  padding:10px 25px;
+  border-radius:5px;
+  text-decoration:none;
+  background-color:rgba(0,0,0,0.4);
+  font-size:1.5rem;
+  transition:0.4s;
+}
+
+header.primary nav a:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:600px) {
+  header.primary nav ul {
+    flex-direction:column;
+    gap:10px;
+  }
+
+  header.primary nav ul a {
+    display:block;
+    margin:0 30px 0 30px;
+  }
+}
+
+.container {
+    background-color:transparent;
+    width:95vw;
+    margin:20px auto;
+}
+
+#intro h2 {
+    color:#329814;
+    border-bottom:1px dotted #000;
+}
+
+#content {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:15px;
+}
+
+#content .post {
+  box-shadow: 0 37px 27px rgba(111,162,81,25);
+  padding:15px;
+  font-size:1.5rem;
+}
+
+#content .post figure {
+  margin:0;
+}
+
+#content time.post-date, #content figcaption {
+  text-transform:uppercase;
+  font-size:0.5rem;
+}
+
+#content a {
+  color:rgb(157, 102, 8);
+  transition:0.5s;
+}
+
+#content a:hover {
+  text-decoration:none;
+}
+
+aside[role="complementary"] {
+  background-color:black;
+  color:rgb(100, 0, 240);
+  padding:15px 0;
+}
+
+aside .container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:70px;
+}
+
+aside .container a {
+  color:#aaffef;
+}
+
+aside .container a:hover {
+  text-decoration:none;
+}
+
+aside .container a:last-child{
+  color:purple;
+  display:block;
+  text-align:right;
+  margin:50px;
+}
+
+aside .widget footer {
+  display:none;
+}
+
+#colophon {
+  background-color:yellow;
+  padding:1px;
+  text-align:center;
+  font-weight:bold;
 }
