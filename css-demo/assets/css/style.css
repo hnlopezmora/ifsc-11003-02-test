@@ -16,8 +16,29 @@ html {
 .container {
   background-color:pink;
   width:80vw;
-  max-width:960px;
+  max-width:1000px;
   margin:20px auto;
+}
+
+.img-right {
+  float:right;
+  margin:10px 0 10px 20px;
+  border:20px solid green;
+  padding:2px;
+}
+
+.img-left {
+  float:left;
+  margin:10px 20px 10px 0;
+  border:20px solid green;
+  padding:2px;
+}
+
+.img-center {
+  display:block;
+  margin:20px auto;
+  border:20px solid green;
+  padding:2px 300px 2px 300px;
 }
 
 /*--------------- Responsive Images ---------------*/
@@ -147,6 +168,9 @@ header.primary nav a:hover {
   flex-direction:row;
   justify-content:center;
   gap:15px;
+  border-bottom: 20px solid #000000;
+  border-top: 1px solid #183904;
+  padding:20px;
 }
 
 #content .post {
@@ -173,6 +197,77 @@ header.primary nav a:hover {
   text-decoration:none;
 }
 
+
+
+
+#practice h2 {
+  text-decoration:underline;
+  background-color:green;
+  color:yellow;
+  opacity:50%;
+}
+
+#practice a {
+  color:orange;
+}
+
+#practice a:hover {
+  text-decoration:none;
+  color:rgb(158, 103, 0);
+  background-color:green;
+  opacity:1%;
+}
+
+#practice h3 {
+  border-left: 20px solid #389203;
+  padding: 50px 0 50px 10px;
+}
+
+#practice table{
+  width:100%;
+  border: 5px dotted orange;
+  border-collapse:collapse;
+}
+
+#practice caption {
+  font-weight:bold;
+  font-size:2.5rem;
+  margin:10px;
+}
+
+#practice tr {
+  background-color:rgb(96, 60, 60);
+}
+
+#practice tr:nth-child(odd) {
+  background-color:white;
+}
+
+#practice tr:nth-child(4n-3) {
+  background-color:green;
+}
+
+#practice tr:hover {
+  background-color:rgb(194, 109, 23);
+}
+
+#practice th {
+  border:20px dotted red;
+  color:yellow;
+  padding:20px;
+  background-color:black;
+}
+
+#practice td {
+  border:1px solid rgb(139, 230, 255);
+  padding:5px;
+}
+
+#practice td:nth-child(n+2) {
+  text-align:right;
+}
+
+
 aside[role="complementary"] {
   background-color:black;
   color:rgb(100, 0, 240);
@@ -180,8 +275,6 @@ aside[role="complementary"] {
 }
 
 aside .container {
-  display:flex;
-  flex-direction:row;
   justify-content:space-around;
   gap:70px;
 }
