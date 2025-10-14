@@ -150,6 +150,8 @@ header.primary nav a:hover {
     display:block;
     margin:0 30px 0 30px;
   }
+
+  
 }
 
 .container {
@@ -198,7 +200,10 @@ header.primary nav a:hover {
 }
 
 
-
+#practice {
+  background-image: url("../img/burgr.webp");
+  background-size:100px;
+}
 
 #practice h2 {
   text-decoration:underline;
@@ -266,6 +271,50 @@ header.primary nav a:hover {
 #practice td:nth-child(n+2) {
   text-align:right;
 }
+
+#practice ol {
+  list-style-type:lower-roman;
+}
+
+#practice ul ul {
+  color:red;
+}
+
+#practice dt {
+  font-weight:bold;
+  color:white;
+}
+
+#practice dd {
+  margin-left:0;
+}
+
+/* #practice dt:nth-child(n+1) { */
+dd + dt {
+  margin-top:20px;
+}
+
+#practice blockquote {
+  border:10px solid red;
+}
+
+#practice blockquote cite {
+  display:block;
+  color:white;
+  font-weight:bold;
+  font-size:0.5rem;
+  text-align:right;
+  margin:10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 aside[role="complementary"] {
