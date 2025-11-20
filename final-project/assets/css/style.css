@@ -1,0 +1,79 @@
+html {
+    background:white;
+}
+
+main {
+    display:grid;
+    gap:10px;
+    max-width:90vw;
+    margin:10px auto;
+    grid-template-rows:repeat(5, 1fr);
+    grid-template-columns:2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "aside aside aside"
+        "footer footer footer"
+}
+
+header {
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:header;
+    background-image:linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.25));
+    /* background-image:url("https://www.bing.com/th/id/OIP.yOmnWoFNq6f4n1n2V3JaLAHaDv?w=244&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"); */
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+section {
+    text-decoration:underline;
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:section;
+}
+
+nav {
+    text-decoration:underline;
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:nav;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+content {
+    text-decoration:underline;
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:content;
+}
+
+aside {
+    text-decoration:underline;
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:aside;
+}
+
+footer {
+    text-decoration:underline;
+    background:rgb(225, 225, 225);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    grid-area:footer;
+}
+
+
